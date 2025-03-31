@@ -625,6 +625,23 @@ h4 + p {
   gap: 1.2rem;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-item {
+  text-align: center;
+}
+
+.social-item p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #d0d4d4;
+}
+
 /* FOOTER STYLING */
 footer {
   width: 100%;
