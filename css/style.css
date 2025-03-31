@@ -609,12 +609,6 @@ h3 {
   background-clip: text;
 }
 
-/* h4 {
-  margin: 1rem;
-  font-family: "Satoshi 900";
-  font-size: 3rem;
-} */
-
 h4 + p {
   padding: 1rem 0 2rem;
 }
@@ -640,6 +634,50 @@ h4 + p {
   margin-top: 5px;
   font-size: 16px;
   color: #d0d4d4;
+}
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 768px) {
+  #contact {
+    padding-bottom: 4rem;
+  }
+
+  .social-icons {
+    flex-direction: column ; /* Coloca os ícones em coluna */
+    gap: 10px; /* Menor espaçamento entre os itens */
+  }
+
+  .social-item {
+    text-align: center;
+  }
+
+  .social-item svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  h4 + p {
+    font-size: 1.7rem; 
+  }
+
+  #contact > div {
+    padding-bottom: 2rem;
+  }
+}
+
+/* Para telas muito pequenas (ex: celulares em modo retrato) */
+@media (max-width: 480px) {
+  #contact span {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  .social-item p {
+    font-size: 14px; 
+  }
 }
 
 /* FOOTER STYLING */
